@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+</head>
+<body>
+
+<p>Welcome to Prediction Page</p>
+
+<form action="result">
+    <table>
+    <tr>
+        <td>Breathing_Problem </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n1" min="0" max="1" value="0" class="slider" id="myRange"
+            onchange="rangevalue.value=value"/>
+	          <output id="rangevalue">No</output>
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Fever </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n2" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Dry_Cough </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n3" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Sore_throat </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n4" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Running_Nose </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n5" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Asthma </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n6" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Chronic_Lung_Disease </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n7" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Headache </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n8" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Heart_Disease </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n9" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Diabetes </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n10" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Hyper_Tension </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n11" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Fatigue </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n12" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Gastrointestinal </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n13" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Abroad_travel </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n14" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Contact_with_COVID_Patient </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n15" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Attended_Large_Gathering </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n16" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Visited_Public_Exposed_Places </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n17" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Family_working_in_Public_Exposed_Places </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n18" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Wearing_Masks </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n19" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Sanitization_from_Market </td>
+        <td>
+        <div class="slidecontainer">
+            <input type="range" name="n20" min="0" max="1" value="0" class="slider" id="myRange">
+          </div>
+        </td>
+    </tr>
+</table>
+<input type="submit">
+Result:{{result2}}
+
+</form>
+
+</form>
+</body>
+</html>
