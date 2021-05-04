@@ -3,11 +3,11 @@
 {% block content %}
 
 <h1>Add post</h1>
-<form action="POST">
+<form action="" method="POST" >
     {% csrf_token %}
     {{form.as_p}}
 
-    <button>Post</button>
+    <button type="submit" href="{% url 'page' %}"> ajouter</button>
 
 
 </form>

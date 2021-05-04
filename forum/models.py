@@ -13,7 +13,7 @@ class Post(models.Model):
         ordering = ['-date_added']
 
     def get_absolute_url(self):
-        return reverse('/forum/frontpage')
+        return reverse('page')
     
 
 class Comment(models.Model):

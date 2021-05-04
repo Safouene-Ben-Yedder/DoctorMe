@@ -4,6 +4,6 @@ from .views import AddPostView
 from . import views
 
 urlpatterns = [
-    #path('', views.page, name='page'),
+    path('', views.page, name='page'),
     path('add_post/',AddPostView.as_view(),name='add_post')
 ]
