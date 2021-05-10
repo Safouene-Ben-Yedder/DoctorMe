@@ -15,16 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-
+from django.conf import settings
+from django.conf.urls.static import static
 from forum.views import frontpage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Main.urls')),
+    path('Main/', include('Main.urls')),
     path('Prediction/', include('Prediction.urls')),
     path('DoctorBot/', include('DoctorBot.urls')),
     path('accounts/', include('accounts.urls')),
     path('forum/', include('forum.urls')),
     path('Addpost/', include('Addpost.urls')),
     
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
