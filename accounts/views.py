@@ -10,7 +10,11 @@ def indexView(request):
 
 @login_required
 def dashboardView(request):
-    return render(request, 'dashboard.html')
+    return render(request, 'Home1.html')
+
+@login_required
+def PredictionMain(request):
+    return render(request, 'Prediction.html')
 
 def registerView(request):
 
@@ -31,7 +35,7 @@ def editView(request):
         form = UserChangeForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('dashboard')
+            return redirect('Home1')
     else:
         form = UserChangeForm()
 

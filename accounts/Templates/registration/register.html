@@ -1,19 +1,50 @@
 {% extends 'index.html' %}
-
-
-
+{% load static %}
 {% block content %}
-<h1> Create account</h1>
-<form method="POST">
-
-{% csrf_token %}
-
-{{ form.as_p}}
-<button>Register</button>
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
 
 
-</form>
+        <title>Register</title>
+        <link rel="stylesheet" href="{% static 'nicepage.css' %}" media="screen">
+        <link rel="stylesheet" href="{% static 'Login2.css' %}" media="screen">
+        <script class="u-script" type="text/javascript" src="{% static 'jquery.js' %}" ></script>
+        <script class="u-script" type="text/javascript" src="{% static 'nicepage.js' %}" ></script>
 
-<button><a href="{% url 'login_url' %}">register</a></button>
-<button><a href="{% url 'Main' %}">Go Back</a></button>
-{% endblock %}
+        <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+        <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        </head>
+        <header class="u-align-center u-border-0 u-border-grey-25 u-clearfix u-header u-white u-header" id="sec-64b2"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="{% url 'Main'  %}" class="u-image u-logo u-image-1" data-image-width="1448" data-image-height="368">
+        <img src="{% static 'images/logo.png' %}" class="u-logo-image u-logo-image-1" data-image-width="264">
+        </a><br>
+        <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-1" data-animation-name="bounceIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down"></div>
+        </div></header>
+
+            <body style="background-color: white ;">
+                <br><br>
+            <div class="container">
+                
+            <div class="alert alert-dark" role="alert">
+            <br><br><center> <h3 style="font-family:'Courier New', Courier, monospace; font-weight: bold; font-size:xx-large">Register</h3></center>
+            <form method="POST">
+                <div style="margin-left: 21%;">
+            {% csrf_token %}
+
+            {{ form.as_p}}
+        </div>
+            <center>
+                <br>
+                <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-light"  >Register</button>
+            <a class="btn btn-dark" href="{% url 'login_url' %}">Login</a>
+            <a class="btn btn-dark" href="{% url 'Main' %}">Home</a><br></center>
+        </div>
+            </form> <br><br>
+            </div>
+            </div>
+
+            </body>
+            {% endblock %}

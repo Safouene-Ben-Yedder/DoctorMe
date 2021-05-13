@@ -5,6 +5,7 @@
 <h1>Add post</h1>
 <form action="" method="POST" >
     {% csrf_token %}
+    {{ form.media }}
     {{form.as_p}}
 
     <button type="submit" href="{% url 'page' %}"> ajouter</button>

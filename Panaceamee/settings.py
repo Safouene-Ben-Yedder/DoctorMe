@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'accounts',
     'forum',
     'Addpost',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

@@ -1,12 +1,13 @@
 from django.db import models
 from django.urls import reverse
-
+from ckeditor.fields import RichTextField 
 
 class Post(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField()
     intro = models.TextField()
-    body = models.TextField()
+    body = RichTextField(blank=True,null=True)
+    #body = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta:
