@@ -5,6 +5,7 @@ import forum
 from forum.models import Post
 
 
+
 def page(request):
     return render(request, 'page.html')
 
@@ -12,5 +13,6 @@ class AddPostView(CreateView):
     model = Post
     template_name = 'add_post.html'
     fields = '__all__'
+    
 
 

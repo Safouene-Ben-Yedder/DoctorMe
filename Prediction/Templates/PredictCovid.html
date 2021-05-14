@@ -3,56 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anymous">
+
 </head>
 <body>
 
-<p>Welcome to Prediction Page</p>
+<div class="container" style="font-weight:bold;font-family: Arial, Helvetica, sans-serif;" >
+  <center>
+<br><br>
+     <h1> Predict Covid-19 based on your symptoms</h1>
 
+      <br>
+      <div class="alert alert-primary" role="alert">
 <form action="result">
     <table>
     <tr>
-        <td>Breathing_Problem </td>
+        <td>Breathing Problems </td>
         <td>
-        <div class="slidecontainer">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
             <input type="range" name="n1" min="0" max="1" value="0" class="slider" id="myRange"
-            onchange="rangevalue.value=value"/>
-	          <output id="rangevalue">No</output>
+            onchange="rangevalue.value=value"/>&nbsp;
+	          <output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Fever </td>
+        <td>Fever</td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n2" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n2" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Dry_Cough </td>
+        <td>Dry Cough </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n3" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n3" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Sore_throat </td>
+        <td>Sore throat </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n4" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n4" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Running_Nose </td>
+        <td>Running Nose </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n5" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n5" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
@@ -60,17 +72,19 @@
     <tr>
         <td>Asthma </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n6" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n6" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Chronic_Lung_Disease </td>
+        <td>Chronic Lung Disease </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n7" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n7" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
@@ -78,17 +92,19 @@
     <tr>
         <td>Headache </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n8" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n8" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Heart_Disease </td>
+        <td>Heart Disease </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n9" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n9" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
@@ -96,17 +112,19 @@
     <tr>
         <td>Diabetes </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n10" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n10" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Hyper_Tension </td>
+        <td>Hyper Tension </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n11" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n11" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
@@ -114,8 +132,9 @@
     <tr>
         <td>Fatigue </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n12" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n12" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
@@ -123,80 +142,92 @@
     <tr>
         <td>Gastrointestinal </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n13" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n13" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Abroad_travel </td>
+        <td>Abroad travel during last week </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n14" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n14" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Contact_with_COVID_Patient </td>
+        <td>Contact with COVID Patient </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n15" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n15" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Attended_Large_Gathering </td>
+        <td>Attended Large Gathering </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n16" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n16" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Visited_Public_Exposed_Places </td>
+        <td>Did you visit public Places </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n17" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n17" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Family_working_in_Public_Exposed_Places </td>
+        <td>Do your family visit public places recently</td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n18" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n18" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Wearing_Masks </td>
+        <td>Do you wear a mask </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n19" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n19" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 
     <tr>
-        <td>Sanitization_from_Market </td>
+        <td>Do you get sanitization from market </td>
         <td>
-        <div class="slidecontainer">
-            <input type="range" name="n20" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <output>No</output>&nbsp;&nbsp;
+            <input type="range" name="n20" min="0" max="1" value="0" class="slider" id="myRange">&nbsp;&nbsp;<output id="rangevalue">Yes</output>
           </div>
         </td>
     </tr>
 </table>
-<input type="submit">
-Result:{{result2}}
-
+<br>
+<div style="margin-right:30%;margin-left:30%;" class="d-grid gap-2">
+<button class="btn btn-primary" type="submit">Prediction Test</button>
+<!-- Result:{{result2}} -->
+</div>
 </form>
-
+</div>
+</center>
+</div>
 </form>
 </body>
 </html>

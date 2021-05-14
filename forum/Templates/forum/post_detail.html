@@ -9,10 +9,10 @@
     <small>Posted at {{post.date_added }}</small>
     <p>{{post.intro }}</p>
 
-    <p>{{ post.body }}</p>
+    <p>{{ post.body|safe }}</p>
 
     <hr>
-
+    <div class="alert alert-light" role="alert">
 {% for comment in post.comments.all %}
 
 <article class="media">
@@ -20,10 +20,13 @@
 
 <div class="content">
 
-<p> {{ comment.name }}</p> <p>{{ comment.date_added }}</p>
-<br>
-{{ comment.body}} 
+<p style="font-weight:bold"> {{ comment.name }}<br>{{ comment.date_added }}</p>
 
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <div style="margin-left: 10px;margin-top:10px;">
+{{ comment.body|safe}} 
+</div>
 </div>
 </div>
 </article>
@@ -34,21 +37,30 @@
 </div>
 {% endfor %}
 </div>
+</div>
 
-    <h2>add comment</h2>
-    <form method='post' action='.'>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <br><h2 style="margin-left:5% ;">Add Comment</h2><br>
+
+        <form style="margin-left: 20%;font-weight: bold;" method='post' action='.'>
         {% csrf_token %}
+        {{ form.media }}
         {{ form.as_p }}
 
-        <div class="field">
-            <div class="control">
-                    <button class="button is-dark">Submit</button>
 
-            </div>
+                <button style="float: right;margin-right: 20%;" class="btn btn-dark">Submit</button>
+                <a style="float: right;margin-right: 1%;" class="btn btn-dark" href="{% url 'frontpage' %}" >Back</a>  
+        </form>
+ <br>
+ <p>&nbsp;</p>
+    </div>
+</div>
 
-        </div>
-    </form>
-   <br> <a class="btn btn-dark btn-block" href="{% url 'frontpage' %}" >Back</a>
+</div>
 
+
+
+</div>
 </div>
 {% endblock %}
