@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
+import wikipedia
 import pandas as pd 
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
@@ -21,6 +21,9 @@ def Home(request):
 
 def PredictCovid(request):
     return render(request, 'PredictCovid.html')
+
+def DoctorBox(request):
+    return render(request, 'DoctorBox.html')
 
 def PredictDiabetes(request):
     return render(request, 'PredictDiabetes.html')
@@ -403,3 +406,8 @@ def resultH(request):
 
     return render(request, 'ResultHeart.html', {"resultH2":result1})
 
+
+def resultDB(request):
+    search = str(request.GET['n1'])
+    result1 = wikipedia.summary(search)
+    return render(request, 'DoctorBoxResult.html', {"resultDB2":result1})

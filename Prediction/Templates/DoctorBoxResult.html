@@ -10,13 +10,9 @@
     <div class="container">
 <center>
 <form>
-    {% if resultH2 == "You have no risk of having this disease , stay safe and take care"  %}
-    <br><br><br><div class="alert alert-primary" role="alert">You have no risk of having this disease , stay safe and take care</div>
-    {% else %}  
-    <br><br><br><div class="alert alert-danger" role="alert">You have high chances of having a Heart failure crisis , We advice you to go as soon as possible to a doctor and make some tests , before it's too late</div>
-    {% endif %}
 
-  <!--  {{result2}} -->
+
+  {{resultDB2}}
 </form>
 <div class="d-grid gap-2">
 <a class="btn btn-secondary" href="{% url 'PredictHeart' %}">Redo the prediction test</a>

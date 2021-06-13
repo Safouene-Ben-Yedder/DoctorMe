@@ -8,7 +8,11 @@ from . import views
 urlpatterns = [
     path('', views.Home, name='Home'),
     path("Home_Covid/", views.Home_Covid,name='Home_Covid'),
+
+     path("DoctorBox/", views.DoctorBox,name='DoctorBox'),
+     path("DoctorBox/resultDB/", views.resultDB),
     #path("ResultCovid/", views.ResultCovid,name='ResultCovid'),
+
     path("PredictCovid/", views.PredictCovid,name='PredictCovid'),
     path("PredictCovid/result/", views.result),
    

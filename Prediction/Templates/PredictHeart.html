@@ -11,7 +11,7 @@
 <div class="container" style="font-weight:bold;font-family: Arial, Helvetica, sans-serif;" >
   <center>
 <br><br>
-     <h1> Predict Heart failure based on your symptoms</h1>
+     <h1> Predict having Heart failure chances </h1>
 
       <br>
       <div class="alert alert-primary" role="alert">
@@ -21,9 +21,8 @@
         <td>Age </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n1" min="40" max="95" value="50" class="slider" id="myRange"
-            onchange="rangevalue.value=value"/>
-	          <output id="rangevalue">50</output>
+            <input type="range" name="n1" min="40" max="95" value="50" class="slider" id="range1" oninput="amount1.value=range1.value"/>
+            <output name="amount1" id="amount1" for="range1">50</output>
           </div>
         </td>
     </tr>
@@ -31,9 +30,10 @@
     <tr>
         <td>Anaemia </td>
         <td>
-        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n2" min="0" max="1" value="0" class="slider" id="myRange">
-          </div>
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+          <span>No</span> 
+          <input type="range" name="n2" min="0" max="1" value="0" class="slider" id="range2" oninput="amount2.value=range2.value"/>
+            <span>Yes</span>
         </td>
     </tr>
 
@@ -41,7 +41,8 @@
         <td>creatinine phosphokinase </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n3" min="23.0" max="7861.0" value="581.83" class="slider" id="myRange">
+            <input type="range" name="n3" min="23.0" max="7861.0" step="0.01" value="581.83" class="slider" id="range3" oninput="amount3.value=range3.value"/>
+            <output name="amount3" id="amount3" for="range3">581.83</output>
           </div>
         </td>
     </tr>
@@ -49,8 +50,10 @@
     <tr>
         <td>Diabetes </td>
         <td>
-        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n4" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>No</span> 
+          <input type="range" name="n4" min="0" max="1" value="0" class="slider" id="range4" oninput="amount4.value=range4.value"/>
+            <span>Yes</span>
           </div>
         </td>
     </tr>
@@ -59,7 +62,8 @@
         <td>Ejection fraction </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n5" min="14.0" max="80.0" value="14.0" class="slider" id="myRange">
+            <input type="range" name="n5" min="14" max="80" step="0.1" value="14" class="slider" id="range5" oninput="amount5.value=range5.value"/>
+            <output name="amount5" id="amount5" for="range5">14</output>
           </div>
         </td>
     </tr>
@@ -67,8 +71,10 @@
     <tr>
         <td>High blood pressure </td>
         <td>
-        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n6" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>No</span>   
+          <input type="range" name="n6" min="0" max="1" value="0" class="slider" id="range6" oninput="amount6.value=range6.value"/>
+            <span>Yes</span>
           </div>
         </td>
     </tr>
@@ -77,7 +83,8 @@
         <td>Platelets </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n7" min="25100.0" max="850000.0" value="263358.0" class="slider" id="myRange">
+            <input type="range" name="n7" min="25100" max="850000" step="0.1" value="263358" class="slider" id="range7" oninput="amount7.value=range7.value"/>
+            <output name="amount7" id="amount7" for="range7">263358</output>
           </div>
         </td>
     </tr>
@@ -86,7 +93,8 @@
         <td>Serum creatinine </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n8" min="0.5" max="9.4" value="1.39" class="slider" id="myRange">
+            <input type="range" name="n8" min="0" max="10" step="0.1" value="1" class="slider" id="range8" oninput="amount8.value=range8.value"/>
+            <output name="amount8" id="amount8" for="range8">1</output>
           </div>
         </td>
     </tr>
@@ -95,7 +103,8 @@
         <td>Serum sodium </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n9" min="113.0" max="148.0" value="136.62" class="slider" id="myRange">
+            <input type="range" name="n9" min="113" max="148" step="0.01" value="136" class="slider" id="range9" oninput="amount9.value=range9.value"/>
+            <output name="amount9" id="amount9" for="range9">136</output>
           </div>
         </td>
     </tr>
@@ -103,10 +112,10 @@
     <tr>
         <td>sex </td>
         <td>
-        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output ><i class="fas fa-female"></i></output>  
-          <input type="range" name="n10" min="0" max="1" value="0" class="slider" id="myRange">
-            <output id="rangevalue"><i class="fas fa-male"></i></output>
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span ><i class="fas fa-female"></i></span>  
+          <input type="range" name="n10" min="0" max="1" value="0" class="slider" id="range10">
+            <span><i class="fas fa-male"></i></span>
           </div>
         </td>
     </tr>
@@ -114,8 +123,10 @@
     <tr>
         <td>Smoking </td>
         <td>
-        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="range" name="n11" min="0" max="1" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>No</span>  
+          <input type="range" name="n11" min="0" max="1" value="0" class="slider" id="range11">
+            <span>Yes</span>
           </div>
         </td>
     </tr>
@@ -124,6 +135,7 @@
 <br>
 <div style="margin-right:30%;margin-left:30%;" class="d-grid gap-2">
 <button class="btn btn-primary" type="submit">Prediction Test</button>
+<a class="btn btn-primary" href="{% url 'PredictionMain' %}">Back</a>
 <!-- Result:{{resultH2}} -->
 </div>
 </form>

@@ -5,27 +5,30 @@
 <title>Home</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anymous">
 
+
+
 </head>
 <body>
 
 <div class="container" style="font-weight:bold;font-family: Arial, Helvetica, sans-serif;" >
   <center>
 <br><br>
-     <h1> Predict Diabetes based on your symptoms</h1>
-
+     <h1> Predict chances of having diabetes</h1>
       <br>
       <div class="alert alert-primary" role="alert">
+
 <form action="resultD">
     <table>
     <tr>
         <td>Pregnancies </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output>0</output>&nbsp;&nbsp;  
-          <input type="range" name="n1" min="0" max="17" value="0" class="slider" id="myRange"
-            onchange="rangevalue.value=value"/>
-	          <output id="rangevalue"></output>
+           &nbsp;&nbsp;  
+          <input type="range" name="n1" min="0" max="17" value="0" class="slider" id="range1"
+          oninput="amount1.value=range1.value">
+          <output name="amount1" id="amount1" for="range1">0</output>
           </div>
+
         </td>
     </tr>
 
@@ -33,9 +36,9 @@
         <td>Glucose </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output>0</output>&nbsp;&nbsp; 
-          <input type="range" name="n2" min="0" max="199" value="117" class="slider" id="myRange" onchange="rangevalue.value=value"/>
-	          <output id="rangevalue"></output>
+           &nbsp;&nbsp; 
+          <input type="range" name="n2" min="0" max="199" value="117" class="slider" id="range2" oninput="amount2.value=range2.value"/>
+          <output name="amount2" id="amount2" for="range2">117</output>
           </div>
         </td>
     </tr>
@@ -44,9 +47,9 @@
         <td>Blood Pressure </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output>0</output>&nbsp;&nbsp;  
-          <input type="range" name="n3" min="0" max="122" value="72" class="slider" id="myRange" onchange="rangevalue.value=value"/>
-	          <output id="rangevalue"></output>
+           &nbsp;&nbsp;  
+          <input type="range" name="n3" min="0" max="122" value="72" class="slider" id="range3" oninput="amount3.value=range3.value"/>
+          <output name="amount3" id="amount3" for="range3">72</output>
           </div>
         </td>
     </tr>
@@ -55,9 +58,9 @@
         <td>Skin Thickness </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output>0</output>&nbsp;&nbsp;  
-          <input type="range" name="n4" min="0" max="99" value="23" class="slider" id="myRange" onchange="rangevalue.value=value"/>
-	          <output id="rangevalue"></output>
+           &nbsp;&nbsp;  
+          <input type="range" name="n4" min="0" max="99" value="23" class="slider" id="range4" oninput="amount4.value=range4.value"/>
+          <output name="amount4" id="amount4" for="range4">23</output>
           </div>
         </td>
     </tr>
@@ -66,9 +69,10 @@
         <td>Insulin </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output>0</output>&nbsp;&nbsp; 
-          <input type="range" name="n5" min="0.0" max="846.0" value="30.0" class="slider" id="myRange" onchange="rangevalue.value=value"/>
-	          <output id="rangevalue"></output>
+           &nbsp;&nbsp; 
+          <input type="range" name="n5" min="0" max="850" step="0.1" value="30" class="slider" id="range5" oninput="amount5.value=range5.value"/>
+          <output name="amount5" id="amount5" for="range5">30</output>
+          <output></output> 
           </div>
         </td>
     </tr>
@@ -77,9 +81,9 @@
         <td>Body Mass Index : BMI </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output>0</output>&nbsp;&nbsp; 
-          <input type="range" name="n6" min="0" max="1" value="0" class="slider" id="myRange" onchange="rangevalue.value=value"/>
-	          <output id="rangevalue"></output>
+           &nbsp;&nbsp; 
+          <input type="range" name="n6" min="0" max="68" step="0.1" value="32" class="slider" id="range6" oninput="amount6.value=range6.value"/>
+          <output name="amount6" id="amount6" for="range6">32</output>
           </div>
         </td>
     </tr>
@@ -88,9 +92,9 @@
         <td>Diabetes Pedigree : DPF </td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output>0</output>&nbsp;&nbsp; 
-          <input type="range" name="n7" min="0.078" max="2.42" value="0.3725" class="slider" id="myRange" onchange="rangevalue.value=value"/>
-	          <output id="rangevalue"></output>
+           &nbsp;&nbsp; 
+          <input type="range" name="n7" min="0.078" max="2.42" step="0.0001" value="0.3725" class="slider" id="range7" oninput="amount7.value=range7.value"/>
+          <output name="amount7" id="amount7" for="range7">0.3725</output>
           </div>
         </td>
     </tr>
@@ -99,9 +103,9 @@
         <td>Age</td>
         <td>
         <div class="slidecontainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <output>0</output>&nbsp;&nbsp;  
-          <input type="range" name="n8" min="21" max="81" value="29" class="slider" id="myRange" onchange="rangevalue.value=value"/>
-	          <output id="rangevalue"></output>
+           &nbsp;&nbsp; 
+          <input type="range" name="n8" min="0" max="100" value="23" class="slider" id="range8" oninput="amount8.value=range8.value"/>
+          <output name="amount8" id="amount8" for="range8">23</output>
           </div>
         </td>
     </tr>
@@ -111,6 +115,7 @@
 <br>
 <div style="margin-right:30%;margin-left:30%;" class="d-grid gap-2">
 <button class="btn btn-primary" type="submit">Prediction Test</button>
+<a class="btn btn-primary" href="{% url 'PredictionMain' %}">Back</a>
 <!-- Result:{{resultD2}} -->
 </div>
 </form>
@@ -118,5 +123,7 @@
 </center>
 </div>
 </form>
+
+
 </body>
 </html>
