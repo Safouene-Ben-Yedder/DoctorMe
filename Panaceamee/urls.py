@@ -27,5 +27,6 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('forum/', include('forum.urls')),
     path('Addpost/', include('Addpost.urls')),
+    path('DoctorBox/', include('DoctorBox.urls')),
     
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
